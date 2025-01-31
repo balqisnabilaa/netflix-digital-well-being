@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Contact Us</title>
+    <style>
+       
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background: url('photos/background3.jpg') no-repeat center center fixed;
+            background-size: cover;
+			color: #ffffff;
+			padding-top: 130px;
+			
+			}
+
+         header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 5px 20px;
+			background-color: #000000; 
+			position: fixed;
+			top:0;
+			width: 97%;
+			z-index: 1; 
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); 
+		}
+
+		header img {
+			max-width: 250px; 
+		}
+
+		nav {
+			display: flex;
+			gap: 10px; 
+		}
+
+		nav a {
+			display: inline-block;
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 1.2em;
+			padding: 10px 20px;
+			border: 2px solid #e50914; 
+			border-radius: 8px; 
+			background-color: transparent; 
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			background-color: #e50914; 
+			color: #ffffff;
+			box-shadow: 0 0 20px #e50914; 
+			transform: scale(1.1);
+		}
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #202020;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            color: #e50914;
+            font-size: 2.2em;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input, textarea {
+            background-color: #303030;
+            color: #ffffff;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #999999;
+        }
+
+        button {
+            background-color: #e50914;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #b00710;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #e50914;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+			background-color: transparent;
+            color: #999999;
+		
+        }
+    </style>
+</head>
+<body>
+ <header>
+ <a href="https://www.netflix.com/my-en/" target="_blank" rel="noopener noreferrer">
+    <img src="photos/logo-netflix.png" alt="Netflix Logo">
+	</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+		<a href="stories.html">Videos & Stories</a>
+        <a href="faqs.html">FAQs</a>
+		<a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+
+
+    <div class="container">
+        <h2>We'd Love to Hear From You!</h2>
+        <p>If you have any questions, feedback, or suggestions, feel free to reach out to us.</p>
+		
+	<form action="mailto:blqisnabilaaa@gmail.com" method="POST" enctype="text/plain">
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+<br>
+
+	<div class="social-links">
+    <a href="https://www.facebook.com/share/169WDYmRPc/?mibextid=wwXIfr" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://x.com/netflix?s=21&t=xu4rOf-ApHL2zVsamCAUmQ" title="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/netflix?igsh=dDFvYzdzaTMyM3Vp" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/netflix/" title="Follow us on LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</div>
+
+</div>
+
+
+    <footer>
+       <p> &copy; 2025 Digital Well-being Awareness | Educational Purposes Only | Balqis, Ain, Adnin, from 5G</p>
+    </footer>
+</body>
+</html>
